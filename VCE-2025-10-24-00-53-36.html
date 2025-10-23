@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00695c;
+      margin-top: 30px;
+    }
+
+    form {
+      background: #ffffff;
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #004d40;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      display: block;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    table {
+      width: 80%;
+      max-width: 700px;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #00796b;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e0f2f1;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px;
+      color: #004d40;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Student Profile Portal</h1>
+
+  <form>
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="roll">Roll Number:</label>
+    <input type="number" id="roll" name="roll" placeholder="Enter roll number">
+
+    <label for="dept">Department:</label>
+    <select id="dept" name="dept">
+      <option value="">Select Department</option>
+      <option value="CSE">CSE</option>
+      <option value="EEE">EEE</option>
+      <option value="BBA">BBA</option>
+      <option value="ENG">English</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email">
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+
+    <label>Skills:</label>
+    <input type="checkbox" name="skills" value="HTML"> HTML
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+
+    <label for="about">About Me:</label>
+    <textarea id="about" name="about" rows="4" placeholder="Write about yourself..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <table>
+    <tr>
+      <th>Roll</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Email</th>
+      <th>Skills</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Tanvir Ahmed</td>
+      <td>CSE</td>
+      <td>tanvir@gmail.com</td>
+      <td>HTML, CSS</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Sadia Rahman</td>
+      <td>EEE</td>
+      <td>sadia@gmail.com</td>
+      <td>JavaScript</td>
+    </tr>
+  </table>
+
+  <footer>
+    &copy; 2025 Student Profile Portal | Designed by Tanvir Ahmed
+  </footer>
+</body>
+</html>
